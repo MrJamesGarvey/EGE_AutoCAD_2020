@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Exercise:  Line Types</title>
+
+<link href="../../main.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../../all.js"></script>
+<script type="text/javascript" src="ortho.js"></script>
+<script type="text/javascript" src="ortho_page4_ex1.js"></script>
+
+
+
+</head>
+
+<body >
+
+<div id="wrapper">
+
+  <!--The header Contains the ENGINEERING ESSENTIALS image-->
+  	
+  <div id="header" class="bcolor"><img src="../../title.png" alt="Engineering Essentials" width="740" height="100" /></div>
+  
+  <!--Navigation contains the links to the different chapters.-->
+  
+  <div id="navigation" class="bcolor">
+  
+    <script type="text/javascript">writeNavBar();</script>
+    
+  </div> <!--End NAVIGATION-->
+
+  <!--Title give the page title-->
+  
+  <div id="title" class="bcolor">
+    <h3>ORTHOGRAPIC PROJECTION - Exercise: Line Types</h3>
+  </div> <!-- End TITLE -->
+  
+  <!--Main Content holds the informational content, the left side links to the different pages and the Next and Previous buttons-->
+  
+  <div id="mainContent">
+  
+    <!--Left Side Bar contains the navigation to the different pages-->
+    
+    <div id="leftSidebar" class="bcolor">
+      			
+                <script type="text/javascript">writeLeftBar();</script>
+                
+    </div> <!--End LEFTSIDEBAR-->
+    
+    <!--Content contains the informational content-->
+    
+    <div id="content">
+    <p><a href="ortho_page4.htm">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ortho_page4_ex2.htm">Next</a></p>
+<p>&nbsp;</p>
+<h1>Ex: Line Types</h1>
+<p>&nbsp;</p>
+      <p>The objective of this exercise is to get familiar with the <i>line types</i> used in orthographic projections.</p>
+      <h3>&nbsp;</h3>
+      <h3>Click on the correct line type.</h3>
+      <p>&nbsp;</p>
+      <table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="23%">Visible line</td>
+    <td width="23%"><input type="text" id="visibleResult" name="visibleResult" readonly="readonly"/></td>
+    <td width="54%">&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><img src="hidden.png" width="171" height="55" onclick="incorrectVisible();"/></td>
+    <td><img src="visible.png" width="171" height="55" onclick="correctVisible();"/></td>
+    <td><img src="center.png" width="171" height="55" onclick="incorrectVisible();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Hidden line</td>
+    <td><input type="text" id="hiddenResult" name="hiddenResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><img src="hidden.png" width="171" height="55" onclick="correctHidden();"/></td>
+    <td><img src="phantom.png" width="171" height="55" onclick="incorrectHidden();"/></td>
+    <td><img src="break.png" width="178" height="105" onclick="incorrectHidden();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Center line</td>
+    <td><input type="text" id="centerResult" name="centerResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+    <td><img src="phantom.png" width="171" height="55" onclick="incorrectCenter();"/></td>
+    <td><img src="center.png" width="171" height="55" onclick="correctCenter();"/></td>
+    <td><img src="cutting.png" width="171" height="81" onclick="incorrectCenter();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Phantom line</td>
+    <td><input type="text" id="phantomResult" name="phantomResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+    <td><img src="dim.png" width="168" height="95" onclick="incorrectPhantom();"/></td>
+    <td><img src="center.png" width="171" height="55" onclick="incorrectPhantom();"/></td>
+    <td><img src="phantom.png" width="171" height="55" onclick="correctPhantom();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Dimension &amp; Extension lines</td>
+    <td><input type="text" id="dimResult" name="dimResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><img src="cutting.png" width="171" height="81" onclick="incorrectDim();"/></td>
+    <td><img src="dim.png" width="168" height="95" onclick="correctDim();"/></td>
+    <td><img src="break.png" width="178" height="105" onclick="incorrectDim();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Cutting plane line</td>
+    <td><input type="text" id="cutResult" name="cutResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><img src="cutting.png" width="171" height="81" onclick="correctCut();"/></td>
+    <td><img src="phantom.png" width="171" height="55" onclick="incorrectCut();"/></td>
+    <td><img src="section.png" width="172" height="83" onclick="incorrectCut();"/></td>
+    
+  </tr>
+  <tr>
+    <td>Section lines</td>
+    <td><input type="text" id="secResult" name="secResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td><img src="center.png" width="171" height="55" onclick="incorrectSec();"/></td>
+    <td><img src="hidden.png" width="171" height="55" onclick="incorrectSec();"/></td>
+    <td><img src="section.png" width="172" height="83" onclick="correctSec();"/></td>
+   
+  </tr>
+  <tr>
+    <td>Break lines</td>
+    <td><input type="text" id="breakResult" name="breakResult" readonly="readonly"/></td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+    <td><img src="break.png" width="178" height="105" onclick="correctBreak();"/></td>
+    <td><img src="center.png" width="171" height="55" onclick="incorrectBreak();"/></td>
+    <td><img src="visible.png" width="171" height="55" onclick="incorrectBreak();"/></td>
+   
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h3>Click on the figure to see the line types identified.</h3>
+<p>&nbsp;</p>
+<p><img id="orthoImg" src="ortho_line_types_no.png" width="704" height="422" alt="Orthographic projection" onclick="swapOrtho();"/></p>
+      <p>&nbsp;
+        
+      </p>
+      <p><a href="ortho_page4.htm">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ortho_page4_ex2.htm">Next</a></p>
+<p>&nbsp;</p>
+      
+      
+    </div> <!--End CONTENT-->
+    
+  </div> <!--End MAINCONTENT-->
+  
+  <div id="footer" class="bcolor"><script type="text/javascript">writeFooter();</script></div>
+  
+</div> <!--End WRAPPER-->
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Exercise: Dimension accuracy</title>
+
+<link href="../../main.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../../all.js"></script>
+<script type="text/javascript" src="dim.js"></script>
+<script type="text/javascript" src="dim_page5_ex8.js"></script>
+
+
+
+
+</head>
+
+<body >
+
+<div id="wrapper">
+
+  <!--The header Contains the ENGINEERING ESSENTIALS image-->
+  	
+  <div id="header" class="bcolor"><img src="../../title.png" alt="Engineering Essentials" width="740" height="100" /></div>
+  
+  <!--Navigation contains the links to the different chapters.-->
+  
+  <div id="navigation" class="bcolor">
+  
+    <script type="text/javascript">writeNavBar();</script>
+  
+  </div> <!--End NAVIGATION-->
+
+  <!--Title give the page title-->
+  
+  <div id="title" class="bcolor">
+    <h3>DIMENSIONING - Exercise: Dimension accuracy</h3>
+  </div> <!-- End TITLE -->
+  
+  <!--Main Content holds the informational content, the left side links to the different pages and the Next and Previous buttons-->
+  
+  <div id="mainContent">
+  
+    <!--Left Side Bar contains the navigation to the different pages-->
+    
+    <div id="leftSidebar" class="bcolor">
+    
+      			<script type="text/javascript">writeLeftBar();</script>
+              
+    </div> <!--End LEFTSIDEBAR-->
+    
+    <!--Content contains the informational content-->
+    
+    <div id="content">
+    
+    <p><a href="dim_page5_ex9.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dim_page5_ex10.htm">Next</a></p>
+<p>&nbsp;</p>
+<h1>Ex: Dimension accuracy</h1>
+<p>&nbsp;</p>
+      <p>The objective of this exercise is to illustrate implied versus stated tolerances.</p>
+      <p>&nbsp;</p>
+      
+      <p><img src="dim_accuracy.png" alt="Dimension accuracy exercise" width="539" height="195" /></p>
+      <p>&nbsp;</p>
+      <form id="impliedTol" name="impliedTol">
+      <ol>
+      <li>Which dimensions have implied tolerances and which have stated tolerances?</li>
+      <p>&nbsp;</p>
+      <input type="button" value="(a) has a stated tolerance" onclick="aStated();"/>
+      <input type="button" value="(a) has an implied tolerance" onclick="aImplied();"/>
+      <input type="text" id="aText" size="50" readonly="readonly"/>
+      <p>&nbsp;</p>
+      <input type="button" value="(b) has a stated tolerance" onclick="bStated();"/>
+      <input type="button" value="(b) has an implied tolerance" onclick="bImplied();"/>
+      <input type="text" id="bText" size="50" readonly="readonly"/>
+      <p>&nbsp;</p>
+      <input type="button" value="(c) has a stated tolerance" onclick="cStated();"/>
+      <input type="button" value="(c) has an implied tolerance" onclick="cImplied();"/>
+      <input type="text" id="cText" size="50" readonly="readonly"/>
+      <p>&nbsp;</p>
+      <li>Does the arrow indicate an increasing or decreasing accuracy?</li>
+      <p>&nbsp;</p>
+      <input type="button" value="Increasing" onclick="increasing();"/>
+      <input type="button" value="Decreasing" onclick="decreasing();"/>
+      <input type="text" id="increasingText" value="" size="50" readonly="readonly"/>
+      <p>&nbsp;</p>
+      <li>Enter the range in which the dimension values are allowed to vary.</li>
+      </ol>
+      <p>&nbsp;</p>
+      <table width="90%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <th scope="col">Minimum Value</th>
+    <th scope="col">Maximum Value</th>
+    <th scope="col">Check</th>
+  </tr>
+  <tr>
+    <td>(a) <input type="text" id="maxA" size="10" value=""/></td>
+    <td>(a) <input type="text" id="minA" size="10" value=""/></td>
+    <td><input type="text" id="aCheck" size="20" value=""/></td>
+  </tr>
+  <tr>
+    <td>(b) <input type="text" id="maxB" size="10" value=""/></td>
+    <td>(b) <input type="text" id="minB" size="10" value=""/></td>
+    <td><input type="text" id="bCheck" size="20" value=""/></td>
+  </tr>
+  <tr>
+   <td>(c) <input type="text" id="maxC" size="10" value=""/></td>
+    <td>(c) <input type="text" id="minC" size="10" value=""/></td>
+    <td><input type="text" id="cCheck" size="20" value=""/></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+      <input type="button" value="Submit Answers" onclick="dimRange();"/>
+      
+      </form>
+      <p>&nbsp;</p>
+      <p><a href="dim_page5_ex9.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="dim_page5_ex10.htm">Next</a></p>
+<p>&nbsp;</p>
+      
+    </div> <!--End CONTENT-->
+    
+  </div> <!--End MAINCONTENT-->
+  
+  <div id="footer" class="bcolor"><script type="text/javascript">writeFooter();</script></div>
+  
+</div> <!--End WRAPPER-->
+
+</body>
+
+</html>

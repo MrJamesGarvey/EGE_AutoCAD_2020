@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Tolerancing Suplemental Problems</title>
+
+<link href="../../main.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../../all.js"></script>
+<script type="text/javascript" src="tol.js"></script>
+<script type="text/javascript" src="tol_page11.js"></script>
+
+
+
+</head>
+
+<body >
+
+<div id="wrapper">
+
+  <!--The header Contains the ENGINEERING ESSENTIALS image-->
+  	
+  <div id="header" class="bcolor"><img src="../../title.png" alt="Engineering Essentials" width="740" height="100" /></div>
+  
+  <!--Navigation contains the links to the different chapters.-->
+  
+  <div id="navigation" class="bcolor">
+  
+    <script type="text/javascript">writeNavBar();</script>
+  
+  </div> <!--End NAVIGATION-->
+
+  <!--Title give the page title-->
+  
+  <div id="title" class="bcolor">
+    <h3>TOLERANCING - Supplemental Problems</h3>
+  </div> <!-- End TITLE -->
+  
+  <!--Main Content holds the informational content, the left side links to the different pages and the Next and Previous buttons-->
+  
+  <div id="mainContent">
+  
+    <!--Left Side Bar contains the navigation to the different pages-->
+    
+    <div id="leftSidebar" class="bcolor">
+    
+      			<script type="text/javascript">writeLeftBar();</script>
+              
+    </div> <!--End LEFTSIDEBAR-->
+    
+    <!--Content contains the informational content-->
+    
+    <div id="content">
+    
+    <p><a href="tol_page10_ex3.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tol_end.htm">Next</a></p>
+<p>&nbsp;</p>
+<h1>Supplemental Problems</h1>
+
+      
+    <p>&nbsp;</p>
+      <p><strong>Supplemental Problem 1:</strong> Fill in the given table for the following shaft and hole limits.  Click the "Submit Answers" button to check your answers.</p>
+      <p>&nbsp;</p>
+      
+           
+      <table width="90%" cellspacing="0" cellpadding="5" border="2" bordercolor="#CC3300">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Shaft</th>
+    <th scope="col">Hole</th>
+    <th scope="col">Check</th>
+  </tr>
+  <tr>
+    <td>Limits</td>
+    <td>1.2518-1.2524</td>
+    <td>1.2500-1.2510</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Basic Size</td>
+    <td colspan="2"><input type="text" id="basicSizeInch" size="5" value=""/></td>
+    
+    <td><input type="text" id="basicSizeInchCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Tolerance</td>
+    <td><input type="text" id="tolShaftInch" size="10" value=""/></td>
+    <td><input type="text" id="tolHoleInch" size="10" value=""/></td>
+    <td><input type="text" id="tolInchCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>MMC</td>
+    <td><input type="text" id="mmcShaft" size="10" value=""/></td>
+    <td><input type="text" id="mmcHole" size="10" value=""/></td>
+    <td><input type="text" id="mmcCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>LMC</td>
+    <td><input type="text" id="lmcShaft" size="10" value=""/></td>
+    <td><input type="text" id="lmcHole" size="10" value=""/></td>
+    <td><input type="text" id="lmcCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Max. Clearance</td>
+    <td colspan="2"><input type="text" id="maxClear" size="10" value=""/></td>
+    
+    <td><input type="text" id="maxClearCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Min. Clearance</td>
+    <td colspan="2"><input type="text" id="minClear" size="10" value=""/></td>
+    
+    <td><input type="text" id="minClearCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Type of Fit</td>
+    <td colspan="2"><input type="text" id="fitInch" size="20" value=""/></td>
+    
+    <td><input type="text" id="fitInchCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<input type="button" value="Submit Answers" onclick="checkTolTableInch();"/>
+<p>&nbsp;</p>
+      <p><strong>Supplemental Problem 2:</strong> Find the limits of the shaft and hole for the following basic size – fit combinations.   Click the "Submit Answers" button to check your answers.</p>
+      <p>&nbsp;</p>
+      <table width="90%" border="2" cellspacing="0" cellpadding="5" bordercolor="#CC3300">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Shaft</th>
+    <th scope="col">Hole</th>
+    <th scope="col">Check</th>
+  </tr>
+  <tr>
+    <td>Basic Size</td>
+    <td colspan="2" style="text-align:center">.625</td>
+    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Fits</td>
+    <td colspan="2" style="text-align:center">Limits</td>
+    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>RC9</td>
+    <td>Min.<input type="text" id="limitShaftMin1" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax1" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin1" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax1" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck1" value="" size="10" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>LC2</td>
+    <td>Min.<input type="text" id="limitShaftMin2" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax2" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin2" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax2" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck2" value="" size="10" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>LT3</td>
+    <td>Min.<input type="text" id="limitShaftMin3" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax3" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin3" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax3" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck3" value="" size="10" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>FN1</td>
+    <td>Min.<input type="text" id="limitShaftMin4" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax4" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin4" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax4" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck4" value="" size="10" readonly="readonly"/></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<input type="button" value="Submit Answers" onclick="checkLimitTableInch();"/>
+<p>&nbsp;</p>
+      <p><strong>Supplemental Problem 3:</strong> Fill in the given table for the following shaft and hole limits.   Click the "Submit Answers" button to check your answers.</p>
+      <p>&nbsp;</p>
+      <table width="90%" cellspacing="0" cellpadding="5" border="2" bordercolor="#CC3300">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Shaft</th>
+    <th scope="col">Hole</th>
+    <th scope="col">Check</th>
+  </tr>
+  <tr>
+    <td>Limits</td>
+    <td>1.994-2.000</td>
+    <td>1.990-2.000</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Basic Size</td>
+    <td colspan="2"><input type="text" id="basicSizeMetric" size="5" value=""/></td>
+    
+    <td><input type="text" id="basicSizeMetricCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Tolerance</td>
+    <td><input type="text" id="tolMetricShaft" size="10" value=""/></td>
+    <td><input type="text" id="tolMetricHole" size="10" value=""/></td>
+    <td><input type="text" id="tolMetricCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Upper Deviation</td>
+    <td><input type="text" id="udShaft" size="10" value=""/></td>
+    <td><input type="text" id="udHole" size="10" value=""/></td>
+    <td><input type="text" id="udCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Lower Deviation</td>
+    <td><input type="text" id="ldShaft" size="10" value=""/></td>
+    <td><input type="text" id="ldHole" size="10" value=""/></td>
+    <td><input type="text" id="ldCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Fundamental Deviation</td>
+    <td ><input type="text" id="fdShaft" size="10" value=""/></td>
+    <td ><input type="text" id="fdHole" size="10" value=""/></td>
+    <td><input type="text" id="fdCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>IT#</td>
+    <td ><input type="text" id="itShaft" size="5" value=""/></td>
+    <td ><input type="text" id="itHole" size="5" value=""/></td>
+    <td><input type="text" id="itCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>System (hole, shaft)</td>
+    <td colspan="2"><input type="text" id="system" size="20" value=""/></td>
+    
+    <td><input type="text" id="systemCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>Type of Fit</td>
+    <td colspan="2"><input type="text" id="fitMetric" size="20" value=""/></td>
+    
+    <td><input type="text" id="fitMetricCheck" size="10" value="" readonly="readonly"/></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<input type="button" value="Submit Answers" onclick="checkTolTableMetric();"/>
+<p>&nbsp;</p>
+
+      <p><strong>Supplemental Problem 4:</strong> Find the limits of the shaft and hole for the following basic size – fit combinations.   Click the "Submit Answers" button to check your answers.</p>
+      <p>&nbsp;</p>
+      <table width="90%" border="2" cellspacing="0" cellpadding="5" bordercolor="#CC3300">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Shaft</th>
+    <th scope="col">Hole</th>
+    <th scope="col">Check</th>
+  </tr>
+  <tr>
+    <td>Basic Size</td>
+    <td colspan="2" style="text-align:center">8</td>
+    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Fits</td>
+    <td colspan="2" style="text-align:center">Limits</td>
+    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>H7/k6</td>
+    <td>Min.<input type="text" id="limitShaftMin5" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax5" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin5" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax5" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck5" value="" size="10" readonly="readonly"/></td>
+  </tr>
+  <tr>
+    <td>S7/h6</td>
+    <td>Min.<input type="text" id="limitShaftMin6" value="" size="10"/>&nbsp;Max.<input type="text" id="limitShaftMax6" value="" size="10"/></td>
+    <td>Min.<input type="text" id="limitHoleMin6" value="" size="10"/>&nbsp;Max.<input type="text" id="limitHoleMax6" value="" size="10"/></td>
+    <td><input type="text" id="limitCheck6" value="" size="10" readonly="readonly"/></td>
+  </tr>
+  
+</table>
+<p>&nbsp;</p>
+<input type="button" value="Submit Answers" onclick="checkLimitTableMetric();"/>
+<p>&nbsp;</p>
+      </form>
+      <p><a href="tol_page10_ex3.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tol_end.htm">Next</a></p>
+<p>&nbsp;</p>
+      
+    </div> <!--End CONTENT-->
+    
+  </div> <!--End MAINCONTENT-->
+  
+  <div id="footer" class="bcolor"><script type="text/javascript">writeFooter();</script></div>
+  
+</div> <!--End WRAPPER-->
+
+</body>
+
+</html>

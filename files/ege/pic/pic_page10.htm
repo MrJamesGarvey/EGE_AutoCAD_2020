@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Pictorial Supplemental Problems</title>
+
+<link href="../../main.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../../all.js"></script>
+<script type="text/javascript" src="pic.js"></script>
+
+
+<script type="text/javascript">
+
+function checkAcross() {
+
+var across2 = document.getElementById("a2").value.toLowerCase();
+var across5 = document.getElementById("a5").value.toLowerCase();
+var across6 = document.getElementById("a6").value.toLowerCase();
+
+
+if (across2 == "fortyfive") {
+	document.getElementById("a2check").firstChild.nodeValue = "Correct";
+	document.getElementById("a2check").style.color = "green";
+}
+else {
+	document.getElementById("a2check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("a2check").style.color = "#cc3300";
+}
+
+if (across5 == "visualize") {
+	document.getElementById("a5check").firstChild.nodeValue = "Correct";
+	document.getElementById("a5check").style.color = "green";
+}
+else {
+	document.getElementById("a5check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("a5check").style.color = "#cc3300";
+}
+
+if (across6 == "eighty") {
+	document.getElementById("a6check").firstChild.nodeValue = "Correct";
+	document.getElementById("a6check").style.color = "green";
+}
+else {
+	document.getElementById("a6check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("a6check").style.color = "#cc3300";
+}
+
+
+}
+
+function checkDown() {
+
+var down1 = document.getElementById("d1").value.toLowerCase();
+var down3 = document.getElementById("d3").value.toLowerCase();
+var down4 = document.getElementById("d4").value.toLowerCase();
+
+
+
+if (down1 == "threedimensional") {
+	document.getElementById("d1check").firstChild.nodeValue = "Correct";
+	document.getElementById("d1check").style.color = "green";
+}
+else {
+	document.getElementById("d1check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("d1check").style.color = "#cc3300";
+}
+
+if (down3 == "ellipses") {
+	document.getElementById("d3check").firstChild.nodeValue = "Correct";
+	document.getElementById("d3check").style.color = "green";
+}
+else {
+	document.getElementById("d3check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("d3check").style.color = "#cc3300";
+}
+
+if (down4 == "thirty") {
+	document.getElementById("d4check").firstChild.nodeValue = "Correct";
+	document.getElementById("d4check").style.color = "green";
+}
+else {
+	document.getElementById("d4check").firstChild.nodeValue = "Incorrect";
+	document.getElementById("d4check").style.color = "#cc3300";
+}
+
+
+}
+
+function swapSP1() {
+	
+document.getElementById("sp1").src = "sp1_pic1.png";
+
+}
+
+function swapSP2() {
+	
+document.getElementById("sp2").src = "sp2_pic1.png";
+
+}
+
+</script>
+
+</head>
+
+<body >
+
+<div id="wrapper">
+
+  <!--The header Contains the ENGINEERING ESSENTIALS image-->
+  	
+  <div id="header" class="bcolor"><img src="../../title.png" alt="Engineering Essentials" width="740" height="100" /></div>
+  
+  <!--Navigation contains the links to the different chapters.-->
+  
+  <div id="navigation" class="bcolor">
+  
+    <script type="text/javascript">writeNavBar();</script>
+  
+  </div> <!--End NAVIGATION-->
+
+  <!--Title give the page title-->
+  
+  <div id="title" class="bcolor">
+    <h3>PICTORIALS - Supplemental Problems</h3>
+  </div> <!-- End TITLE -->
+  
+  <!--Main Content holds the informational content, the left side links to the different pages and the Next and Previous buttons-->
+  
+  <div id="mainContent">
+  
+    <!--Left Side Bar contains the navigation to the different pages-->
+    
+    <div id="leftSidebar" class="bcolor">
+    
+      			      			<script type="text/javascript">writeLeftBar();</script>
+    </div> 
+    <!--End LEFTSIDEBAR-->
+    
+    <!--Content contains the informational content-->
+    
+    <div id="content">
+    
+    <p><a href="pic_page9_ex2.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pic_end.htm">Next</a></p>
+ <p>&nbsp;</p>
+ <h1>Supplemental Problems</h1>
+ <p>&nbsp;</p>
+      
+    
+      <p><strong>Supplemental Problem 1:</strong> Draw a full scale isometric pictorial by hand or in a drawing package.</p>
+      <p>&nbsp;</p>
+      <img id="sp1" src="sp1_pic0.png" width="620" height="519" alt="sp1" onclick="swapSP1();" />
+      <p>&nbsp;</p>
+      <p><strong>Supplemental Problem 2:</strong> Draw a full scale isometric pictorial by hand or in a drawing package.</p>
+      <p>&nbsp;</p>
+      <img id="sp2" src="sp2_pic0.png" width="620" height="417" alt="sp2" onclick="swapSP2();" />
+      <p>&nbsp;</p>
+<p><a href="pic_page9_ex2.htm" >Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pic_end.htm">Next</a></p>
+ <p>&nbsp;</p>
+      
+    </div> <!--End CONTENT-->
+    
+  </div> <!--End MAINCONTENT-->
+  
+  <div id="footer" class="bcolor"><script type="text/javascript">writeFooter();</script></div>
+  
+</div> <!--End WRAPPER-->
+
+</body>
+
+</html>

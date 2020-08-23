@@ -1,0 +1,13 @@
+// JavaScript Document
+
+function writeNavBar() {
+	
+document.write("<p><a href='../../../index.htm'>Home</a> &#8226; <a href='../intro/intro_page0.htm'>Introduction</a> &#8226; <a href='../ortho/ortho_page0.htm'>Orthographic Projection</a> &#8226; <a href='pic_page0.htm'>Pictorials</a> &#8226; <a href='../dim/dim_page0.htm'>Dimensioning</a> &#8226; <a href='../sec/sec_page0.htm'>Sectioning</a> &#8226; <a href='../adv/adv_page0.htm'>Advanced Drawing Techniques</a> &#8226; <a href='../tol/tol_page0.htm'>Tolerancing</a> &#8226; <a href='../fast/fast_page0.htm'>Threads &amp; Fasteners</a> &#8226; <a href='../assem/assem_page0.htm'>Assembly</a> </p>");
+	
+}
+
+function writeLeftBar() {
+	
+	document.write("<p>1) <a href='pic_page1.htm'>Pictorials Introduction</a><br /> 2) <a href='pic_page2.htm'>Pictorial Types</a><br /> 3) <a href='pic_page3.htm'>Axonometric Projections</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page3_ex1.htm'>Axonometric pic identification</a><br/> 4) <a href='pic_page4.htm'>Oblique Projections</a><br /> 5) <a href='pic_page5.htm'>Perspective Projections</a><br /> 6) <a href='pic_page6.htm'>Visualization</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page6_ex1.htm'>Pictorial matching</a><br/> 7a) <a href='pic_page7a.htm'>Drawing Isometric Pic Linear</a><br/>  &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page7_ex1.htm'>Iso pic linear</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Video: <a href='pic_page7_v1.htm'>Iso pic linear </a><br />7b) <a href='pic_page7b.htm'>Drawing Isometric Pic Circular</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page7_ex2.htm'>Iso pic circular</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Video: <a href='pic_page7_v2.htm'>Iso pic circular</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Video: <a href='pic_page7_v3.htm'>Intermediate iso Pic</a><br/> 8) <a href='pic_page8.htm'>Drawing Cabinet Oblique Pictorials</a><br/>  &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page8_ex1.htm'>Oblique pic linear</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page8_ex2.htm'>Oblique pic circular </a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Video: <a href='pic_page8_v1.htm'>Oblique pic linear</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Video: <a href='pic_page8_v2.htm'>Oblique pic circular</a><br /> 9) <a href='pic_page9.htm'>Applying What We Have Learned</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page9_ex1.htm'>Creating pic 1</a><br/> &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Exercise: <a href='pic_page9_ex2.htm'>Creating pic 2</a><br/> 10) <a href='pic_page10.htm'>Supplemental Problems</a></p>");
+	  
+}
